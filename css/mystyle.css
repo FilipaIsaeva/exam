@@ -1,0 +1,398 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 100px;
+}
+
+.nav_link {
+    display: block;
+    color: #000000;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    background-color: #FBDB83;
+    text-align: left;
+    padding: 13px;
+    text-decoration: none;
+}
+
+/*To indicate the user where
+they are in the website, the
+selected page up in the
+navigation menu will be in
+different colour*/
+.selected_contentsection{
+    background-color: white;
+}
+
+.selected_recipe {
+    background-color: white;
+    color: black;
+}
+
+
+.navigation_container {
+    background-color: #FBDB83;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: relative;
+    width: 100%;
+    height: 105px;
+    z-index: 3;
+    left: 0;
+    right: 0;
+}
+
+.menu {
+    list-style: none;
+    overflow: hidden;
+    background-color: black;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+
+.menu_item {
+    font-size: 12px;
+    padding: 5px 5px 5px 20px;
+}
+
+/*Breadcrumb is used for easier
+navigation as well. The user will
+know exactly where he is on the
+webpage and how they got there.*/
+.breadcrumb {
+    float: right;
+    margin-right: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+.breadcrumb_link {
+    text-decoration: none;
+    color: #B20D0C;
+}
+
+.breadcrumb_wrap {
+    height: 30px;
+    background-color: #F88F2D;
+}
+
+.body {
+    background-color: #FFEFCA;
+}
+
+.heading1 {
+    color: #F43C3B;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 20px;
+    display:block;
+}
+
+.index_image1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.index_image2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    background-color: #F88F2D;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.footer_text {
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.footer_image {
+    width: 30px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.social {
+    margin-left: 40px;
+}
+
+/*.products_container {
+    display: flex;
+    flex-direction: column;
+
+}*/
+
+.products_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.product_container {
+padding: 16px 24px 16px 24px;
+    margin: 0 16px 16px 16px;
+    background-color: white;
+    width: 320px;
+/*    text-align: center;*/
+    line-height: 1.5;
+}
+
+.product_image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.product_description {
+/*    margin-left: 125px;
+    margin-right: 125px;*/
+    margin-bottom: 70px;
+}
+
+.author_name {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/*This class contains the entire
+content of the page. Having this
+makes it easier to align items.*/
+.article_container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+/*Setting the margins to auto
+centers the image.*/
+.article_image {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+/*This refers to the captions under images.
+To differentiate it from the main text, I
+have applied rules for making the captions
+italic and lighter than an article text.*/
+.image_description {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article_text {
+    margin-bottom: 45px;
+    font-family: "Abadi Extra Light";
+    /*font-weight: lighter;*/
+}
+
+.milk_text {
+    margin-bottom: 25px;
+}
+
+.article_headline {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.recipe_container {
+    margin-left: 85px;
+    margin-right: 85px;
+    position: relative;
+    text-align: center;
+}
+
+/*The images on the Recipe page have
+opacity meaning they appear a bit
+transparent. This makes it easier
+for the user to read the text on
+the image. Also, when the user
+hovers their mouse over the image,
+the opacity will change. This points
+out that by cicking the image they
+will be redirected to the page that
+gives them the recipe about the
+food they are seeing.*/
+.recipe_image {
+    opacity: 0.7;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.recipe_image:hover{
+    opacity: 0.4;
+}
+
+.cake_image {
+    opacity: 0.7;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 200px;
+}
+
+.cake_image:hover {
+    opacity: 0.4;
+}
+
+.recipe_heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: black;
+    font-style: italic;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.recipe_image2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.recipe_headline {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.ingredients_text {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ingredients_list {
+    margin-bottom: 30px;
+}
+
+.preparation_text {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.tips_headline {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/*This is my breakpoint. On screen sizes
+bigger than 855px, content will start
+appearing different, suited better for
+a desktop version.*/
+@media only screen and (min-width: 855px) {
+    .index_image1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .index_image2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .footer_text {
+        margin-top: 20px;
+        margin-left: 120px;
+    }
+
+    .some_image {
+        width: 30px;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    .social {
+        margin-left: 80px;
+    }
+
+    .article_image {
+        width: 50%;
+        height: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .article_headline {
+        margin-left: 280px;
+        font-size: 20px;
+    }
+
+    .article_text {
+        margin-left: 280px;
+        margin-right: 280px;
+        font-size: 20px;
+    }
+
+    .milk_text {
+        margin-left: 280px;
+        margin-right: 280px;
+        font-size: 20px;
+    }
+
+    .recipe_image {
+        width: 50%;
+        height: 50%;
+    }
+
+    .cake_image {
+        width: 50%;
+        height: 360px;
+    }
+
+    .recipe_image2 {
+        width: 20%;
+    }
+
+    .preparation_text {
+        font-size: 20px;
+        margin-left: 270px;
+        margin-right: 270px;
+    }
+
+    .tips_headline {
+        margin-left: 270px;
+        margin-right: 270px;
+    }
+
+    .ingredients_list {
+        margin-left: 290px;
+        margin-right: 290px;
+    }
+}
