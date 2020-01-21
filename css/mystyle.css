@@ -319,6 +319,12 @@ bigger than 855px, content will start
 appearing different, suited better for
 a desktop version.*/
 @media only screen and (min-width: 855px) {
+    .offers_container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
     .index_image1 {
         display: block;
         margin-left: auto;
@@ -406,7 +412,6 @@ a desktop version.*/
 
 .fade {
   position:relative;
-  
   right:0;
   left:0;
   bottom:0;
@@ -448,9 +453,9 @@ a desktop version.*/
     
 }
 #fade2 {
-    -webkit-animation-delay: -6s;   
+    -webkit-animation-delay: 2s;
 }
 
 #fade3 {
-    -webkit-animation-delay: -4s; 
+    -webkit-animation-delay: 4s;
 }
